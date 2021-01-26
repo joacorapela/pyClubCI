@@ -14,7 +14,7 @@ def subtract(first_term, second_term):
 def divide(numerator, denominator):
     return numerator / denominator
 
-def logAbs(x): # pragma: no cover
+def logAbs(x):
     if x<0:
         x *= -1
     return math.log(x)
