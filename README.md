@@ -1,3 +1,1 @@
-# Material for the PyClub session on continuous Integration [![Build Status](https://travis-ci.com/joacorapela/pyClubCI.svg?branch=master)](https://travis-ci.com/joacorapela/pyClubCI)
-
-
+# Material for the PyClub session on continuous Integration [![Build Status](https://travis-ci.com/joacorapela/pyClubCI.svg?branch=master)](https://travis-ci.com/joacorapela/pyClubCI) [![codecov](https://codecov.io/gh/joacorapela/pyClubCI/branch/master/graph/badge.svg?token=WYRS7XNOHN)](https://codecov.io/gh/joacorapela/pyClubCI)
