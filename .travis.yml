@@ -39,11 +39,9 @@ install:
   # numpy may be automatically upgraded.
 
   - conda install --yes pytest
+  - pip install coverage
 
   # You can also install some dependencies with pip if not available in conda
-
-    # - pip install --progress-bar off torch  chart-studio
-  - pip install --progress-bar off torch
 
 before_script:
   - export PYTHONPATH=$PYTHONPATH:/home/travis/build/joacorapela/pyClubCI/src
@@ -51,4 +49,8 @@ before_script:
 script:
 
   - pytest  # will run all tests in the package
+  - coverage run --branch -m pytest
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
