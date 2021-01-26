@@ -21,7 +21,7 @@ class TestCalculator:
     '''
     def test_lobAbs(self):
         assert 3 == calculator.logAbs(math.exp(3))
-    '''
 
     def test_lobAbsNegative(self):
         assert 3 == calculator.logAbs(-math.exp(3))
+    '''
