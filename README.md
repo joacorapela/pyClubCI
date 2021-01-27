@@ -2,7 +2,6 @@
 
 ## Introduction
 - Old and new approaches to testing
-    - Formal program testing (a waste of time?)
 - Relevance for researchers (that are not software developers)
     - Catch bugs early
     - Safe net for code modification
