@@ -24,10 +24,10 @@ I will conclude with
 
 ### Create conda environment
 
-- Create and activate a `PyClubCI` conda environment
+- Create and activate a `TutorialCI` conda environment
 ```
-conda create --name PyClubCI
-conda activate PyClubCI
+conda create --name TutorialCI
+conda activate TutorialCI
 ```
 - Add relevant packages `pytest`, `coverage` to conda
 ```
@@ -40,7 +40,7 @@ coverage
 ```
 ### Program the calculator
 
-- In a directory called `PyClubCI` write the first version of `calculator.py`
+- In a directory called `TutorialCI` write the first version of `calculator.py`
 ```python
 """
 Calculator library containing basic math operations.
@@ -152,8 +152,8 @@ coverage html
 
 ## Automatic approach
 
-### Create a Github repository PyClubCI
-- Create a git repository in the directory `PyClubCI`
+### Create a Github repository TutorialCI
+- Create a git repository in the directory `TutorialCI`
 ```
 git init
 ```
@@ -168,7 +168,7 @@ __pycache__/
 ```
 # Lessons from the tutorial on code testing for researchers
 ```
-- Add all files in the directory `PyClubCI` to the repository
+- Add all files in the directory `TutorialCI` to the repository
 ```
 git add .
 ```
@@ -176,10 +176,10 @@ git add .
 ```
 git commit -m "Added"
 ```
-- Create a new repository called `PyClubCI` in Github
-- Add the reference to the `PyClubCI` Github repository to your local git repository
+- Create a new repository called `TutorialCI` in Github
+- Add the reference to the `TutorialCI` Github repository to your local git repository
 ```
-git remote add origin https://github.com/<your-github-username>/PyClubCI.git
+git remote add origin https://github.com/<your-github-username>/TutorialCI.git
 ```
 - Push your `master` branch to Github
 ```
@@ -210,22 +210,22 @@ git push
 - Watch what happens in Travis CI
 - Check in your email the notification from Travis CI about your test results
 - To add a badge to your `README.md` to indicate the outcome of your latest test:
-    - Go to your repository Travis CI page https://travis-ci.com/github/your-Github-username/PyClubCI. 
+    - Go to your repository Travis CI page https://travis-ci.com/github/your-Github-username/TutorialCI. 
     - Click on the badge next to the title
     - In the next dialog box select form the dropbox `FORMAT` the option `Markdown`
     - Copy to the clipboard the contents of box `RESULT`
     - Edit your `README.md` and paste the content of the clipboard at the end of the title line
     - The title of your `README.md` should be as follows
     ```
-    # Lessons from the tutorial on code testing for researchers [![Build Status](https://travis-ci.com/<your-Github-user-name>/PyClubCI.svg?branch=master)](https://travis-ci.com/<your-Github-user-name>/PyClubCI)
+    # Lessons from the tutorial on code testing for researchers [![Build Status](https://travis-ci.com/<your-Github-user-name>/TutorialCI.svg?branch=master)](https://travis-ci.com/<your-Github-user-name>/TutorialCI)
     ```
 - Commit all changes to your local repository and push them to Github
-- Look at the new badge in the `README.md` of your PyClubCI repository
+- Look at the new badge in the `README.md` of your TutorialCI repository
 
 ### Automate coverage reports
 After every commit we want to have a measure of how well our tests probe or cover our code. For this we will use [codecov](https://about.codecov.io/)
 
-- Signup to [codecov](https://about.codecov.io/) and add the PyClubCI Github repository
+- Signup to [codecov](https://about.codecov.io/) and add the TutorialCI Github repository
 - Modify your `.travis.yml` to perform code coverage analysis and submit its results to codecov. You modified `.travis.yml` should look as follows
 ```
 language: python
@@ -252,7 +252,7 @@ after_success:
     - Paste the copied code into the title of your `README.md`.
     - The title of your `README.md` should be as follows
     ```
-    # Lessons from the tutorial on code testing for researchers [![Build Status](https://travis-ci.com/your-Github-user-name/PyClubCI.svg?branch=master)](https://travis-ci.com/your-Github-user-name/PyClubCI)[![codecov](https://codecov.io/gh/your-Github-user-name/PyClubCI/branch/master/graph/badge.svg?token=NNIS1SSK7L)](https://codecov.io/gh/your-Github-user-name/PyClubCI)
+    # Lessons from the tutorial on code testing for researchers [![Build Status](https://travis-ci.com/your-Github-user-name/TutorialCI.svg?branch=master)](https://travis-ci.com/your-Github-user-name/TutorialCI)[![codecov](https://codecov.io/gh/your-Github-user-name/TutorialCI/branch/master/graph/badge.svg?token=NNIS1SSK7L)](https://codecov.io/gh/your-Github-user-name/TutorialCI)
     ```
 - Add, commit and push your local changes to your Github repository.
 ```
