@@ -40,7 +40,7 @@ coverage
 ```
 ### Program the calculator
 
-- In a directory called `pyClubCI` write the first version of `calculator.py`
+- In a directory called `PyClubCI` write the first version of `calculator.py`
 ```python
 """
 Calculator library containing basic math operations.
@@ -60,6 +60,7 @@ def subtract(first_term, second_term):
 Unit tests for the calculator library
 """
 
+import pytest
 import calculator
 
 
@@ -156,11 +157,18 @@ coverage html
 ```
 git init
 ```
+- Create the .gitignore file with the following content
+```
+*~
+*.swp
+htmlcov/
+__pycache__/
+```
 - Create a `README.md` for your repository with the following content
 ```
 # Lessons from the tutorial on code testing for researchers
 ```
-- Add all files in the directory `pyClubCI` to the repository
+- Add all files in the directory `PyClubCI` to the repository
 ```
 git add .
 ```
@@ -193,13 +201,24 @@ script:
 
   - pytest
 ```
-- Commit all changes to your local repository and push them to Github
+- Add `.travis.yml` to your git, commit and push
+```
+git add .travis.yml
+git commit -m "Added"
+git push
+```
 - Watch what happens in Travis CI
 - Check in your email the notification from Travis CI about your test results
-- Add a badge to your `README.md` to indicate the outcome of your latest test. Change the title of your `README.md` as follows
-```
-# Lessons from the tutorial on code testing for researchers [![Build Status](https://travis-ci.com/<your-Github-user-name>/PyClubCI.svg?branch=master)](https://travis-ci.com/<your-Github-user-name>/PyClubCI)
-```
+- To add a badge to your `README.md` to indicate the outcome of your latest test:
+    - Go to your repository Travis CI page https://travis-ci.com/github/your-Github-username/PyClubCI. 
+    - Click on the badge next to the title
+    - In the next dialog box select form the dropbox `FORMAT` the option `Markdown`
+    - Copy to the clipboard the contents of box `RESULT`
+    - Edit your `README.md` and paste the content of the clipboard at the end of the title line
+    - The title of your `README.md` should be as follows
+    ```
+    # Lessons from the tutorial on code testing for researchers [![Build Status](https://travis-ci.com/<your-Github-user-name>/PyClubCI.svg?branch=master)](https://travis-ci.com/<your-Github-user-name>/PyClubCI)
+    ```
 - Commit all changes to your local repository and push them to Github
 - Look at the new badge in the `README.md` of your PyClubCI repository
 
@@ -223,8 +242,26 @@ script:
 after_success:
   - bash <(curl -s https://codecov.io/bash) # send coverage results to codecov
 ```
-- Go to [codecov](https://about.codecov.io/), login, select your repository from the list, select Settings on the top right, select Badge from the left navigation bar, copy the Mardown code, and paste the copied code into the title of your `README.md`.
+- To add the `codecov` badge:
+    - Go to [codecov](https://about.codecov.io/)
+    - Login
+    - Select your repository from the list
+    - Select Settings on the top right
+    - Select Badge from the left navigation bar
+    - Copy the Mardown code
+    - Paste the copied code into the title of your `README.md`.
+    - The title of your `README.md` should be as follows
+    ```
+    # Lessons from the tutorial on code testing for researchers [![Build Status](https://travis-ci.com/your-Github-user-name/PyClubCI.svg?branch=master)](https://travis-ci.com/your-Github-user-name/PyClubCI)[![codecov](https://codecov.io/gh/your-Github-user-name/PyClubCI/branch/master/graph/badge.svg?token=NNIS1SSK7L)](https://codecov.io/gh/your-Github-user-name/PyClubCI)
+    ```
 - Add, commit and push your local changes to your Github repository.
+```
+git add .travis.yml
+git commit -m "Added coverage automatization"
+git add README.md
+git commit -m "Added coverage badge"
+git push
+```
 - Look at your test coverage in the `README.md` of your repository.
 
 ## Other options
