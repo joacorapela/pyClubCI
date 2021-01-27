@@ -18,6 +18,9 @@ Then, to automate these tasks, we will:
 - Automate the run of your tests and their coverage analysis with [TravisCI](https://travis-ci.org/)
 - Integrate coverage analysis reports into your Github repository (e.g., show a tests-covering badge in your README.md) with [codecov](https://about.codecov.io/)
 
+I will conclude with
+- Comments on why tests are important to my work
+- Suggestions on how to write good tests
 ## Manual approach
 
 ### Create conda environment
@@ -27,13 +30,12 @@ Then, to automate these tasks, we will:
 conda create --name PyClubCI
 conda activate PyClubCI
 ```
-- Add relevant packages `flake8`, `pytest`, `coverage` to conda
+- Add relevant packages `pytest`, `coverage` to conda
 ```
-conda install flake8 pytest coverage
+conda install pytest coverage
 ```
-- Creat `requirements.txt` with the following content
+- Create `requirements.txt` with the following content
 ```
-flake8
 pytest
 coverage
 ```
