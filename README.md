@@ -166,7 +166,7 @@ __pycache__/
 ```
 - Create a `README.md` for your repository with the following content
 ```
-# Lessons from the tutorial on code testing for researchers
+# Tutorial on code testing for researchers
 ```
 - Add all files in the directory `TutorialCI` to the repository
 ```
