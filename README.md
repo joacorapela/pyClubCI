@@ -300,3 +300,4 @@ Here we used `pytest` for testing, `coverage.py` to analyze code coverage, Travi
 - There are excellent and easy to use tools that will help you find bugs early
 - Test provide you a safe net to modify your code without introducing bugs into older code
 
+Note: please help me improve this tutorial. If you find any problem running it, please open an issue and/or submit a pull request with a fix. Thanks.
