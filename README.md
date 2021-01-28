@@ -221,6 +221,11 @@ git push
     ```
 - Commit all changes to your local repository and push them to Github
 - Look at the new badge in the `README.md` of your TutorialCI repository
+- Let's play a little 
+    - add a new bug to the calculator
+    - add, commit and push
+    - check the Travis CI email
+    - check the build badge
 
 ### Automate coverage reports
 After every commit we want to have a measure of how well our tests probe or cover our code. For this we will use [codecov](https://about.codecov.io/)
@@ -263,6 +268,11 @@ git commit -m "Added coverage badge"
 git push
 ```
 - Look at your test coverage in the `README.md` of your repository.
+- Let's play a little more
+    - add a new function to the calculator, without a corresponding test
+    - add, commit and push
+    - check the codecov badge
+    - check the codecov reports
 
 ## Other options
 
