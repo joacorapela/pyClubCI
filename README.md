@@ -289,7 +289,6 @@ Here we used `pytest` for testing, `coverage.py` to analyze code coverage, Travi
 - Why is CI relevant to my work?
     - My supervisor would not trust on my code
     - Safe net for code modification
-- My test-writing style: black-box
 
 ### Suggestions about how to write tests:
 - When you know you your code is working well, generate input-output test for most functions (to build a safe net for future code updates)
